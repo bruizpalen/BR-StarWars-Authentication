@@ -1,0 +1,25 @@
+.scrollContainer {
+  width: 100%; /* Set a fixed width */
+  overflow-x: auto;
+}
+
+.scroll {
+  white-space: nowrap;
+  display: flex;
+  gap: 10px; /* Add some gap between cards */
+  padding: 10px; /* Add padding to cards */
+  max-width: 100%; /* Make it responsive */
+}
+
+.loaderContainer {
+  height: 20rem;
+  margin-bottom: 10px;
+}
+
+/* Media query for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+  .scroll {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    white-space: normal; /* Allow text to wrap */
+  }
+}

@@ -1,0 +1,62 @@
+.detailImage {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.error-page {
+  min-height: 100vh;
+}
+
+/* HomePage.css */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #00000000; /* Neon red background color */
+}
+
+.content {
+  text-align: center;
+  color: #000000; /* Neon red text color */
+}
+
+.neon-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.star-wars-logo {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.neon-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 0, 0, 0) 0%,
+    transparent 80%
+  );
+  border-radius: 50%;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #d5c005, 0 0 20px #d5c005, 0 0 30px #d5c005;
+  }
+  50% {
+    box-shadow: 0 0 20px #d5c005, 0 0 30px #d5c005, 0 0 40px #d5c005;
+  }
+  100% {
+    box-shadow: 0 0 10px #d5c005, 0 0 20px #d5c005, 0 0 30px #d5c005;
+  }
+}
